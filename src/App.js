@@ -7,15 +7,25 @@ class Drumpad extends Component {
     this.handleOnClick = this.handleOnClick.bind(this);
 
     this.state = {
-      played: ''
+      played: '',
+      sound: ''
     }
   }
 
   handleOnClick(event) {
     this.setState({
-      played: event.target.getAttribute("id")
+      played: event.target.firstElementChild.getAttribute("id"),
+      sound:  event.target.firstElementChild.getAttribute("src")
+    }, () => {
+      console.log("audio-id : ", this.state.played);
+      console.log("sound-url : ", this.state.sound);
+
+      let audio = document.getElementById(this.state.played);
+      audio.play();
     });
   }
+
+
 
   render() {
     return (
@@ -24,39 +34,39 @@ class Drumpad extends Component {
         <div className="Pad">
           <button className="drum-pad" id="music-1" onClick={ this.handleOnClick }>
             Q
-            <audio src="#" className="clip" id="Q"></audio>
+            <audio src="https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3" className="clip" id="Q"></audio>
           </button>
           <button className="drum-pad" id="music-2" onClick={ this.handleOnClick }>
             W
-            <audio src="#" className="clip" id="W"></audio>
+            <audio src="https://s3.amazonaws.com/freecodecamp/drums/Heater-2.mp3" className="clip" id="W"></audio>
           </button>
           <button className="drum-pad" id="music-3" onClick={ this.handleOnClick }>
             E
-            <audio src="#" className="clip" id="E"></audio>        
+            <audio src="https://s3.amazonaws.com/freecodecamp/drums/Heater-3.mp3" className="clip" id="E"></audio>        
           </button>
           <button className="drum-pad" id="music-4" onClick={ this.handleOnClick }>
             A
-            <audio src="#" className="clip" id="A"></audio>        
+            <audio src="https://s3.amazonaws.com/freecodecamp/drums/Heater-4_1.mp3" className="clip" id="A"></audio>
           </button>
           <button className="drum-pad" id="music-5" onClick={ this.handleOnClick }>
             S
-            <audio src="#" className="clip" id="S"></audio> 
+            <audio src="https://s3.amazonaws.com/freecodecamp/drums/Heater-6.mp3" className="clip" id="S"></audio> 
           </button>
           <button className="drum-pad" id="music-6" onClick={ this.handleOnClick }>
             D
-            <audio src="#" className="clip" id="D"></audio>
+            <audio src="https://s3.amazonaws.com/freecodecamp/drums/Dsc_Oh.mp3" className="clip" id="D"></audio>
           </button>
           <button className="drum-pad" id="music-7" onClick={ this.handleOnClick }>
             Z
-            <audio src="#" className="clip" id="Z"></audio>
+            <audio src="https://s3.amazonaws.com/freecodecamp/drums/Kick_n_Hat.mp3" className="clip" id="Z"></audio>
           </button>
           <button className="drum-pad" id="music-8" onClick={ this.handleOnClick }>
             X
-            <audio src="#" className="clip" id="X"></audio>
+            <audio src="https://s3.amazonaws.com/freecodecamp/drums/RP4_KICK_1.mp3" className="clip" id="X"></audio>
           </button>
           <button className="drum-pad" id="music-9" onClick={ this.handleOnClick }>
             C
-            <audio src="#" className="clip" id="C"></audio>
+            <audio src="https://s3.amazonaws.com/freecodecamp/drums/Cev_H2.mp3" className="clip" id="C"></audio>
           </button>
         </div>      
       </div>
