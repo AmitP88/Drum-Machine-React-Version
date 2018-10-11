@@ -7,20 +7,20 @@ class Drumpad extends Component {
     this.handleOnClick = this.handleOnClick.bind(this);
 
     this.state = {
-      played: '',
+      id: '',
       sound: ''
     }
   }
 
   handleOnClick(event) {
     this.setState({
-      played: event.target.firstElementChild.getAttribute("id"),
+      id: event.target.firstElementChild.getAttribute("id"),
       sound:  event.target.firstElementChild.getAttribute("src")
     }, () => {
-      console.log("audio-id : ", this.state.played);
+      console.log("audio-id : ", this.state.id);
       console.log("sound-url : ", this.state.sound);
 
-      let audio = document.getElementById(this.state.played);
+      let audio = document.getElementById(this.state.id);
       audio.play();
     });
   }
@@ -30,7 +30,7 @@ class Drumpad extends Component {
   render() {
     return (
       <div className="container">
-        <div id="display">{this.state.played}</div>
+        <div id="display">{this.state.id}</div>
         <div className="Pad">
           <button className="drum-pad" id="music-1" onClick={ this.handleOnClick }>
             Q
