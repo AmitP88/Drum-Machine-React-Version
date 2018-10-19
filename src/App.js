@@ -28,10 +28,8 @@ class Drumpad extends Component {
   }
 
   handleOnKeyDown(event) {
-    const keycodes = [81, 87, 69, 65, 83, 68, 90, 88, 67];
     const eventKey = event.keyCode;
 
-      for(let i = 0; i < keycodes.length; i++){
         switch(eventKey){
           case 81:
             this.setState({
@@ -126,7 +124,6 @@ class Drumpad extends Component {
           default:
             console.log('invalid key');
         }
-      }
 
 
 
