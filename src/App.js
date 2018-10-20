@@ -182,6 +182,7 @@ class App extends Component {
   render() {
     return (
       <div className="App" id="drum-machine">
+        <h1>Drum Machine</h1>
         <Drumpad />
       </div>
     );
