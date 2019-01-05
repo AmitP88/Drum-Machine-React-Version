@@ -40,6 +40,7 @@ body {
 .drum-pad {
   padding: 10px;
   height: 100px;
+  width: 38px;
   border: none;
 }
 
