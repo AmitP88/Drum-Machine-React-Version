@@ -10,6 +10,7 @@ html, body {
 html {
   display: table;
   margin: auto;
+  background-color: slateblue;
 }
 
 body {
@@ -51,11 +52,15 @@ body {
 }
 
 .fa-github:hover {
-  color: #9932CC;
+  color: lightgreen;
 }
 
 .github-profile-link {
-  color: #9932CC;
+  color: darkblue;
   font-weight: bold;
   text-decoration-line: none;
+}
+
+.github-profile-link:hover {
+  color: lightgreen;
 }
