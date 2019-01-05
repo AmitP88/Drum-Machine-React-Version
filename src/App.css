@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
 .container {
@@ -20,4 +20,27 @@
 
 .drum-pad {
   padding: 10px;
+}
+
+.fa-github {
+  transform: rotate(-360deg);
+  margin-left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.fa-github {
+  color: black;
+  margin: 0 auto;
+  margin-left: 60px;
+  margin-top: 10%;
+}
+
+.fa-github:hover {
+  color: #9932CC;
+}
+
+.github-profile-link {
+  color: #9932CC;
+  font-weight: bold;
+  text-decoration-line: none;
 }

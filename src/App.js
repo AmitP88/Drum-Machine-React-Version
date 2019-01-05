@@ -178,12 +178,26 @@ class Drumpad extends Component {
   }
 };
 
+class Footer extends Component {
+  render() {
+    return (
+      <footer>
+        <a href="https://github.com/AmitP88/Pomodoro-Timer" target="_blank">
+          <i className="fab fa-github fa-4x"></i>
+        </a>      
+        <p>Developed by <a href="https://github.com/AmitP88" target="_blank" className="github-profile-link">Amit Patel</a></p>      
+      </footer>
+    );
+  }
+}
+
 class App extends Component {
   render() {
     return (
       <div className="App" id="drum-machine">
         <h1>Drum Machine</h1>
         <Drumpad />
+        <Footer />
       </div>
     );
   }
