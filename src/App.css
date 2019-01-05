@@ -39,6 +39,45 @@ body {
 
 .drum-pad {
   padding: 10px;
+  height: 100px;
+  border: none;
+}
+
+/* Colors for each drum-pad */
+#music-1 {
+  background-color: aquamarine;
+}
+
+#music-2 {
+  background-color: aliceblue;
+}
+
+#music-3 {
+  background-color: antiquewhite;
+}
+
+#music-4 {
+  background-color: aqua;
+}
+
+#music-5 {
+  background-color: coral;
+}
+
+#music-6 {
+  background-color: cornflowerblue;
+}
+
+#music-7 {
+  background-color: crimson;
+}
+
+#music-8 {
+  background-color: gold;
+}
+
+#music-9 {
+  background-color: darkslateblue;
 }
 
 .fa-github {
