@@ -3,6 +3,20 @@
   margin-top: 5%;
 }
 
+html, body {
+  height: 100%;
+}
+
+html {
+  display: table;
+  margin: auto;
+}
+
+body {
+  display: table-cell;
+  vertical-align: middle;
+}
+
 .container {
   width: 350px;
   height: 300px;
